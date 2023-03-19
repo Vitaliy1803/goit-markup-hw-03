@@ -12,6 +12,11 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
 
     <title>Portfolio</title>
@@ -19,33 +24,37 @@
 
   <body>
     <!-- header -->
-    <header>
-      <nav>
-        <a href="./index.html" class="logo link"
-          >Web<span class="logo-color">Studio</span></a
+    <header class="header">
+      <nav class="header-nav">
+        <a href="./index.html" class="header-logo link"
+          >Web<span class="header-logo-color">Studio</span></a
         >
-        <ul class="site-nav list">
-          <li>
-            <a href="" class="link">Studio</a>
+        <ul class="header-nav-list list">
+          <li class="header-item">
+            <a href="./index.html" class="header-item-link link">Studio</a>
           </li>
-          <li>
-            <a href="./portfolio.html" class="link">Portfolio</a>
+          <li class="header-item">
+            <a href="./portfolio.html" class="header-item-link link"
+              >Portfolio</a
+            >
           </li>
-          <li>
-            <a href="" class="link">Contacts</a>
+          <li class="header-item">
+            <a href="" class="header-item-link link">Contacts</a>
           </li>
         </ul>
       </nav>
       <!-- header-contacts -->
       <address class="auth-nav">
-        <ul class="list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link"
+        <ul class="auth-nav-list list">
+          <li class="auth-nav-item">
+            <a href="mailto:info@devstudio.com" class="auth-nav-link link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+          <li class="auth-nav-item">
+            <a href="tel:+110001111111" class="auth-nav-link link"
+              >+11 (000) 111-11-11</a
+            >
           </li>
         </ul>
       </address>
@@ -181,7 +190,7 @@
               />
               <h2 class="title">Fresh Coffee</h2>
               <p class="description">Web Site</p>
-              </a>
+            </a>
           </li>
         </ul>
       </section>

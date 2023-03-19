@@ -20,13 +20,30 @@
   --btn-filters-active-text-color: #ffffff;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   color: #434455;
 }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1158px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
 /* header */
-.logo.link {
+
+.header-logo.link,
+.footer-logo.link {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -37,12 +54,14 @@ body {
   color: var(--logo-text-color);
 }
 
-.logo-color {
+.header-logo-color {
   color: var(--logo-text-studio-color);
 }
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
@@ -71,17 +90,21 @@ body {
 /* hero */
 .hero {
   background-color: var(--hero-backround-color);
+  text-align: center;
 }
 
 .hero-title {
+  margin-top: 188px;
+  margin-bottom: 48px;
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--hero-text-color);
+
 }
 
 .hero-btn {
+  margin-bottom: 188px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -90,9 +113,23 @@ body {
   cursor: pointer;
   color: var(--btn-text-color);
   background-color: var(--btn-backroubd-color);
+  border-radius: 4px;
+  padding: 16px 32px;
+
 }
 
 /* sections */
+.section {
+padding-top: 120px;
+padding-bottom: 120px;
+
+}
+
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -105,6 +142,8 @@ body {
 /* features */
 
 .title {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -112,7 +151,13 @@ body {
   color: var(--title-text-color); /* NAVY BLUE */
 }
 
+.worker .title {
+  margin-top: 32px;
+}
+
 .description {
+  margin-top: 8px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.5; /* or 150% */
   letter-spacing: 0.02em;
