@@ -137,6 +137,7 @@ body {
 }
 
 .hero-title {
+  margin-top: 0;
   margin-bottom: 48px;
   font-size: 56px;
   line-height: 1.07;
@@ -186,6 +187,10 @@ body {
 
 .features-item:not(:last-child) {
   margin-right: 24px;
+}
+
+.features-item {
+  width: 264px;
 }
 
 .title {
